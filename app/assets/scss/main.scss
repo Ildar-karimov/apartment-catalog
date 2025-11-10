@@ -1,0 +1,17 @@
+@use 'base/reset.scss' as *;
+@use 'variables.scss' as *;
+
+body {
+  position: relative;
+  width: 100%;
+  font-family: $font-family;
+  overflow-x: hidden;
+
+  background-color: #f2f4f6;
+}
+
+#__nuxt {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
