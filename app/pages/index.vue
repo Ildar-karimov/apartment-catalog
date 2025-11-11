@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <div>
-    <h1>Главная страница</h1>
-  </div>
+  <section class="home-page">
+    <UiText size="md" tag="h1">Покупка\Аренда недвижимости</UiText>
+  </section>
 </template>
 
 <style scoped>
