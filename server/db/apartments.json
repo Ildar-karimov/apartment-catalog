@@ -1,0 +1,722 @@
+[
+  {
+    "id": 1,
+    "type": "sale",
+    "category": "apartment",
+    "title": "Просторная 3-комнатная квартира в новом ЖК",
+    "description": "Светлая и уютная квартира с современной отделкой в закрытом жилом комплексе с развитой инфраструктурой. Идеально подходит для семьи. Панорамные окна, вид на город.",
+    "price": 18500000,
+    "address": "Москва, ЦАО, ул. Тверская, д. 15",
+    "area": 85.5,
+    "rooms": 3,
+    "floor": 12,
+    "total_floors": 25,
+    "year_built": 2022,
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800"
+    ],
+    "amenities": ["парковка", "лифт", "консьерж", "фитнес-центр"],
+    "agent": {
+      "name": "Анна Иванова",
+      "phone": "+7 (495) 123-45-67",
+      "email": "anna@realestate.ru"
+    }
+  },
+  {
+    "id": 2,
+    "type": "rent",
+    "category": "apartment",
+    "title": "Стильная 1-комнатная квартира в центре",
+    "description": "Современный ремонт, вся необходимая техника. Отличное расположение в пешей доступности от метро. Подходит для одного человека или пары.",
+    "price": 45000,
+    "address": "Москва, Хамовники, ул. Льва Толстого, д. 8",
+    "area": 38.2,
+    "rooms": 1,
+    "floor": 5,
+    "total_floors": 9,
+    "year_built": 2015,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=800"
+    ],
+    "amenities": ["парковка", "лифт", "домофон"],
+    "agent": {
+      "name": "Петр Сидоров",
+      "phone": "+7 (495) 234-56-78",
+      "email": "petr@realestate.ru"
+    }
+  },
+  {
+    "id": 3,
+    "type": "sale",
+    "category": "apartment",
+    "title": "2-комнатная квартира с евроремонтом",
+    "description": "Тёплая квартира с качественным ремонтом, современной кухней и санузлом. Балкон застеклён. Тихий двор.",
+    "price": 12500000,
+    "address": "Москва, СВАО, ул. Комдива Орлова, д. 12",
+    "area": 54.7,
+    "rooms": 2,
+    "floor": 3,
+    "total_floors": 12,
+    "year_built": 2018,
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800"
+    ],
+    "amenities": ["парковка", "лифт", "детская площадка"],
+    "agent": {
+      "name": "Мария Петрова",
+      "phone": "+7 (495) 345-67-89",
+      "email": "maria@realestate.ru"
+    }
+  },
+  {
+    "id": 4,
+    "type": "rent",
+    "category": "apartment",
+    "title": "Апартаменты с видом на Москву-реку",
+    "description": "Элитные апартаменты с панорамными окнами и видом на реку. Высокие потолки, авторский дизайн.",
+    "price": 120000,
+    "address": "Москва, Пресненский район, наб. Пресненская, д. 10",
+    "area": 67.3,
+    "rooms": 2,
+    "floor": 18,
+    "total_floors": 30,
+    "year_built": 2021,
+    "images": [
+      "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=800",
+      "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800"
+    ],
+    "amenities": ["подземная парковка", "бассейн", "спа", "консьерж"],
+    "agent": {
+      "name": "Алексей Волков",
+      "phone": "+7 (495) 456-78-90",
+      "email": "alex@realestate.ru"
+    }
+  },
+  {
+    "id": 5,
+    "type": "sale",
+    "category": "studio",
+    "title": "Студия в новостройке",
+    "description": "Компактная и функциональная студия с современной планировкой. Идеально для инвестиции или первого жилья.",
+    "price": 7500000,
+    "address": "Москва, ЮАО, ул. Кировоградская, д. 25",
+    "area": 28.9,
+    "rooms": 1,
+    "floor": 7,
+    "total_floors": 16,
+    "year_built": 2023,
+    "images": [
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=800",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
+    ],
+    "amenities": ["парковка", "лифт", "фитнес-центр"],
+    "agent": {
+      "name": "Елена Козлова",
+      "phone": "+7 (495) 567-89-01",
+      "email": "elena@realestate.ru"
+    }
+  },
+  {
+    "id": 6,
+    "type": "rent",
+    "category": "apartment",
+    "title": "3-комнатная квартира для семьи",
+    "description": "Просторная квартира в спальном районе. Рядом школа, детский сад и парк. Подходит для большой семьи.",
+    "price": 65000,
+    "address": "Москва, СЗАО, ул. Туристская, д. 18",
+    "area": 72.1,
+    "rooms": 3,
+    "floor": 2,
+    "total_floors": 5,
+    "year_built": 2010,
+    "images": [
+      "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800"
+    ],
+    "amenities": ["детская площадка", "парковка", "лифт"],
+    "agent": {
+      "name": "Сергей Новиков",
+      "phone": "+7 (495) 678-90-12",
+      "email": "sergey@realestate.ru"
+    }
+  },
+  {
+    "id": 7,
+    "type": "sale",
+    "category": "apartment",
+    "title": "Квартира в историческом центре",
+    "description": "Аутентичная квартира в сталинском доме с высокими потолками и лепниной. Уникальная атмосфера.",
+    "price": 22000000,
+    "address": "Москва, Арбат, ул. Арбат, д. 35",
+    "area": 78.4,
+    "rooms": 2,
+    "floor": 4,
+    "total_floors": 6,
+    "year_built": 1955,
+    "images": [
+      "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800",
+      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800"
+    ],
+    "amenities": ["высокие потолки", "лепнина", "паркет"],
+    "agent": {
+      "name": "Ольга Смирнова",
+      "phone": "+7 (495) 789-01-23",
+      "email": "olga@realestate.ru"
+    }
+  },
+  {
+    "id": 8,
+    "type": "rent",
+    "category": "apartment",
+    "title": "Современная 1-комнатная у метро",
+    "description": "Яркая квартира с современным ремонтом в 5 минутах от метро. Вся необходимая техника в наличии.",
+    "price": 38000,
+    "address": "Москва, ВАО, ул. Первомайская, д. 42",
+    "area": 35.8,
+    "rooms": 1,
+    "floor": 9,
+    "total_floors": 14,
+    "year_built": 2017,
+    "images": [
+      "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=800",
+      "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800"
+    ],
+    "amenities": ["парковка", "лифт", "домофон"],
+    "agent": {
+      "name": "Дмитрий Кузнецов",
+      "phone": "+7 (495) 890-12-34",
+      "email": "dmitry@realestate.ru"
+    }
+  },
+  {
+    "id": 9,
+    "type": "sale",
+    "category": "apartment",
+    "title": "Пентхаус с террасой",
+    "description": "Эксклюзивный пентхаус с собственной террасой и видом на город. Премиальная отделка.",
+    "price": 45000000,
+    "address": "Москва, Дорогомилово, Кутузовский проспект, д. 32",
+    "area": 145.2,
+    "rooms": 4,
+    "floor": 22,
+    "total_floors": 22,
+    "year_built": 2020,
+    "images": [
+      "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=800",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800"
+    ],
+    "amenities": ["терраса", "панорамные окна", "премиум отделка", "парковка"],
+    "agent": {
+      "name": "Андрей Морозов",
+      "phone": "+7 (495) 901-23-45",
+      "email": "andrey@realestate.ru"
+    }
+  },
+  {
+    "id": 10,
+    "type": "rent",
+    "category": "apartment",
+    "title": "Уютная квартира в спальном районе",
+    "description": "Тихая и светлая квартира с хорошим ремонтом. Подходит для спокойной жизни вдали от шума центра.",
+    "price": 32000,
+    "address": "Москва, ЮВАО, ул. Маршала Чуйкова, д. 15",
+    "area": 41.3,
+    "rooms": 1,
+    "floor": 4,
+    "total_floors": 9,
+    "year_built": 2012,
+    "images": [
+      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800"
+    ],
+    "amenities": ["парковка", "лифт", "детская площадка"],
+    "agent": {
+      "name": "Ирина Федорова",
+      "phone": "+7 (495) 012-34-56",
+      "email": "irina@realestate.ru"
+    }
+  },
+  {
+    "id": 11,
+    "type": "sale",
+    "category": "apartment",
+    "title": "4-комнатная квартира в ЖК премиум-класса",
+    "description": "Роскошная просторная квартира с дизайнерским ремонтом, двумя санузлами и гардеробной. Вид на парк.",
+    "price": 38500000,
+    "address": "Москва, Хамовники, ул. Льва Толстого, д. 25",
+    "area": 128.7,
+    "rooms": 4,
+    "floor": 14,
+    "total_floors": 18,
+    "year_built": 2021,
+    "images": [
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800",
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800"
+    ],
+    "amenities": ["подземная парковка", "консьерж", "фитнес-центр", "бассейн"],
+    "agent": {
+      "name": "Виктория Орлова",
+      "phone": "+7 (495) 112-34-67",
+      "email": "viktoria@realestate.ru"
+    }
+  },
+  {
+    "id": 12,
+    "type": "rent",
+    "category": "studio",
+    "title": "Студия с мебелью и техникой",
+    "description": "Уютная студия с полностью оборудованной кухней и современной мебелью. Готовка к въезду.",
+    "price": 28000,
+    "address": "Москва, САО, ул. Зои и Александра Космодемьянских, д. 8",
+    "area": 26.5,
+    "rooms": 1,
+    "floor": 3,
+    "total_floors": 12,
+    "year_built": 2019,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
+      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800"
+    ],
+    "amenities": ["мебель", "техника", "парковка", "лифт"],
+    "agent": {
+      "name": "Артем Белов",
+      "phone": "+7 (495) 223-45-78",
+      "email": "artem@realestate.ru"
+    }
+  },
+  {
+    "id": 13,
+    "type": "sale",
+    "category": "apartment",
+    "title": "2-комнатная квартира в тихом дворе",
+    "description": "Квартира с современным ремонтом, балкон застеклен. Тихий зеленый двор без машин.",
+    "price": 14200000,
+    "address": "Москва, ЮЗАО, ул. Обручева, д. 32",
+    "area": 58.9,
+    "rooms": 2,
+    "floor": 6,
+    "total_floors": 9,
+    "year_built": 2016,
+    "images": [
+      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800"
+    ],
+    "amenities": ["парковка", "лифт", "детская площадка"],
+    "agent": {
+      "name": "Наталья Громова",
+      "phone": "+7 (495) 334-56-89",
+      "email": "natalia@realestate.ru"
+    }
+  },
+  {
+    "id": 14,
+    "type": "rent",
+    "category": "apartment",
+    "title": "3-комнатная квартира для семьи с детьми",
+    "description": "Просторная квартира рядом с парком и школой. Отдельная комната для каждого ребенка.",
+    "price": 78000,
+    "address": "Москва, ЗАО, ул. Лобачевского, д. 15",
+    "area": 89.3,
+    "rooms": 3,
+    "floor": 7,
+    "total_floors": 16,
+    "year_built": 2018,
+    "images": [
+      "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800"
+    ],
+    "amenities": ["парковка", "лифт", "детская площадка", "фитнес-центр"],
+    "agent": {
+      "name": "Екатерина Васнецова",
+      "phone": "+7 (495) 445-67-90",
+      "email": "ekaterina@realestate.ru"
+    }
+  },
+  {
+    "id": 15,
+    "type": "sale",
+    "category": "apartment",
+    "title": "1-комнатная квартира в новостройке",
+    "description": "Квартира с чистовой отделкой в сданном доме. Возможность сделать индивидуальный ремонт.",
+    "price": 9200000,
+    "address": "Москва, СВАО, ул. Летчика Бабушкина, д. 42",
+    "area": 32.4,
+    "rooms": 1,
+    "floor": 11,
+    "total_floors": 17,
+    "year_built": 2023,
+    "images": [
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=800",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
+    ],
+    "amenities": ["парковка", "лифт", "фитнес-центр"],
+    "agent": {
+      "name": "Павел Комаров",
+      "phone": "+7 (495) 556-78-01",
+      "email": "pavel@realestate.ru"
+    }
+  },
+  {
+    "id": 16,
+    "type": "rent",
+    "category": "apartment",
+    "title": "2-комнатная квартира в центре",
+    "description": "Стильная квартира с авторским дизайном в историческом центре. Высокие потолки, французские окна.",
+    "price": 95000,
+    "address": "Москва, Басманный район, ул. Машкова, д. 12",
+    "area": 61.8,
+    "rooms": 2,
+    "floor": 3,
+    "total_floors": 6,
+    "year_built": 2014,
+    "images": [
+      "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800",
+      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800"
+    ],
+    "amenities": ["дизайнерский ремонт", "высокие потолки", "парковка"],
+    "agent": {
+      "name": "Алиса Соколова",
+      "phone": "+7 (495) 667-89-12",
+      "email": "alisa@realestate.ru"
+    }
+  },
+  {
+    "id": 17,
+    "type": "sale",
+    "category": "apartment",
+    "title": "5-комнатная квартира в элитном доме",
+    "description": "Эксклюзивная просторная квартира с панорамными окнами и видом на Кремль. Премиум отделка.",
+    "price": 68500000,
+    "address": "Москва, Пресненский район, Краснопресненская наб., д. 8",
+    "area": 215.7,
+    "rooms": 5,
+    "floor": 25,
+    "total_floors": 30,
+    "year_built": 2022,
+    "images": [
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800",
+      "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=800"
+    ],
+    "amenities": ["подземная парковка", "бассейн", "спа", "консьерж", "фитнес"],
+    "agent": {
+      "name": "Максим Денисов",
+      "phone": "+7 (495) 778-90-23",
+      "email": "maxim@realestate.ru"
+    }
+  },
+  {
+    "id": 18,
+    "type": "rent",
+    "category": "studio",
+    "title": "Студия с отдельной кухней",
+    "description": "Комфортная студия с выделенной кухонной зоной. Современная бытовая техника и мебель.",
+    "price": 32000,
+    "address": "Москва, ВАО, Щелковское шоссе, д. 78",
+    "area": 29.3,
+    "rooms": 1,
+    "floor": 5,
+    "total_floors": 12,
+    "year_built": 2020,
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
+      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800"
+    ],
+    "amenities": ["мебель", "техника", "парковка", "лифт"],
+    "agent": {
+      "name": "Юлия Медведева",
+      "phone": "+7 (495) 889-01-34",
+      "email": "yulia@realestate.ru"
+    }
+  },
+  {
+    "id": 19,
+    "type": "sale",
+    "category": "apartment",
+    "title": "3-комнатная квартира с ремонтом под ключ",
+    "description": "Квартира с готовым качественным ремонтом от застройщика. Можно заезжать и жить.",
+    "price": 19800000,
+    "address": "Москва, ЮАО, Варшавское шоссе, д. 125",
+    "area": 76.8,
+    "rooms": 3,
+    "floor": 8,
+    "total_floors": 22,
+    "year_built": 2023,
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800"
+    ],
+    "amenities": ["ремонт от застройщика", "парковка", "лифт", "фитнес-центр"],
+    "agent": {
+      "name": "Георгий Попов",
+      "phone": "+7 (495) 990-12-45",
+      "email": "georgiy@realestate.ru"
+    }
+  },
+  {
+    "id": 20,
+    "type": "rent",
+    "category": "apartment",
+    "title": "1-комнатная квартира для студентов",
+    "description": "Небольшая уютная квартира недалеко от университета. Подходит для студентов или молодых специалистов.",
+    "price": 25000,
+    "address": "Москва, Гагаринский район, ул. Строителей, д. 15",
+    "area": 30.1,
+    "rooms": 1,
+    "floor": 2,
+    "total_floors": 5,
+    "year_built": 2011,
+    "images": [
+      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800"
+    ],
+    "amenities": ["парковка", "домофон"],
+    "agent": {
+      "name": "Светлана Романова",
+      "phone": "+7 (495) 001-23-56",
+      "email": "svetlana@realestate.ru"
+    }
+  },
+  {
+    "id": 21,
+    "type": "sale",
+    "category": "apartment",
+    "title": "2-комнатная квартира в ЖК с инфраструктурой",
+    "description": "Современная квартира в развитом жилом комплексе с собственной школой, садом и поликлиникой.",
+    "price": 16800000,
+    "address": "Москва, Новая Москва, пос. Сосенское, ул. Александры Монаховой, д. 5",
+    "area": 62.5,
+    "rooms": 2,
+    "floor": 9,
+    "total_floors": 16,
+    "year_built": 2022,
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800"
+    ],
+    "amenities": ["парковка", "лифт", "школа", "детский сад", "фитнес-центр"],
+    "agent": {
+      "name": "Константин Яковлев",
+      "phone": "+7 (495) 112-34-67",
+      "email": "konstantin@realestate.ru"
+    }
+  },
+  {
+    "id": 22,
+    "type": "rent",
+    "category": "apartment",
+    "title": "3-комнатная квартира с камином",
+    "description": "Элитная квартира с камином в гостиной и панорамными окнами. Дизайнерский ремонт.",
+    "price": 150000,
+    "address": "Москва, Рублевское шоссе, д. 18",
+    "area": 95.7,
+    "rooms": 3,
+    "floor": 2,
+    "total_floors": 3,
+    "year_built": 2019,
+    "images": [
+      "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=800",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800"
+    ],
+    "amenities": ["камин", "панорамные окна", "охрана", "парковка"],
+    "agent": {
+      "name": "Антон Григорьев",
+      "phone": "+7 (495) 223-45-78",
+      "email": "anton@realestate.ru"
+    }
+  },
+  {
+    "id": 23,
+    "type": "sale",
+    "category": "apartment",
+    "title": "1-комнатная квартира в хрущевке",
+    "description": "Квартира в хрущевке после капитального ремонта. Все коммуникации заменены.",
+    "price": 8500000,
+    "address": "Москва, СЗАО, ул. Народного Ополчения, д. 32",
+    "area": 33.2,
+    "rooms": 1,
+    "floor": 4,
+    "total_floors": 5,
+    "year_built": 1965,
+    "images": [
+      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800"
+    ],
+    "amenities": ["капитальный ремонт", "домофон"],
+    "agent": {
+      "name": "Татьяна Куликова",
+      "phone": "+7 (495) 334-56-89",
+      "email": "tatyana@realestate.ru"
+    }
+  },
+  {
+    "id": 24,
+    "type": "rent",
+    "category": "apartment",
+    "title": "2-комнатная квартира с балконом",
+    "description": "Светлая квартира с просторным балконом и видом на парк. Современная отделка.",
+    "price": 52000,
+    "address": "Москва, САО, Дмитровское шоссе, д. 55",
+    "area": 56.3,
+    "rooms": 2,
+    "floor": 7,
+    "total_floors": 14,
+    "year_built": 2017,
+    "images": [
+      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800"
+    ],
+    "amenities": ["балкон", "парковка", "лифт", "детская площадка"],
+    "agent": {
+      "name": "Михаил Орлов",
+      "phone": "+7 (495) 445-67-90",
+      "email": "mikhail@realestate.ru"
+    }
+  },
+  {
+    "id": 25,
+    "type": "sale",
+    "category": "apartment",
+    "title": "4-комнатная квартира в сталинском доме",
+    "description": "Просторная квартира с высокими потолками и раздельными комнатами. Исторический шарм.",
+    "price": 42500000,
+    "address": "Москва, Тверской район, ул. Большая Бронная, д. 12",
+    "area": 112.8,
+    "rooms": 4,
+    "floor": 3,
+    "total_floors": 6,
+    "year_built": 1952,
+    "images": [
+      "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800",
+      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800"
+    ],
+    "amenities": ["высокие потолки", "лепнина", "паркет", "исторический дом"],
+    "agent": {
+      "name": "Евгения Воронцова",
+      "phone": "+7 (495) 556-78-01",
+      "email": "evgenia@realestate.ru"
+    }
+  },
+  {
+    "id": 26,
+    "type": "rent",
+    "category": "studio",
+    "title": "Студия в лофт стиле",
+    "description": "Стильная студия с элементами лофта: кирпичная стена, открытые коммуникации.",
+    "price": 45000,
+    "address": "Москва, ЦАО, ул. Пятницкая, д. 18",
+    "area": 34.7,
+    "rooms": 1,
+    "floor": 5,
+    "total_floors": 7,
+    "year_built": 2015,
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800"
+    ],
+    "amenities": ["лофт стиль", "мебель", "техника", "домофон"],
+    "agent": {
+      "name": "Аркадий Семенов",
+      "phone": "+7 (495) 667-89-12",
+      "email": "arkadiy@realestate.ru"
+    }
+  },
+  {
+    "id": 27,
+    "type": "sale",
+    "category": "apartment",
+    "title": "2-комнатная квартира с гардеробной",
+    "description": "Удобная планировка с отдельной гардеробной комнатой. Современная сантехника.",
+    "price": 15600000,
+    "address": "Москва, ЮВАО, Волгоградский проспект, д. 88",
+    "area": 59.6,
+    "rooms": 2,
+    "floor": 12,
+    "total_floors": 20,
+    "year_built": 2021,
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800"
+    ],
+    "amenities": ["гардеробная", "парковка", "лифт", "фитнес-центр"],
+    "agent": {
+      "name": "Лариса Тихонова",
+      "phone": "+7 (495) 778-90-23",
+      "email": "larisa@realestate.ru"
+    }
+  },
+  {
+    "id": 28,
+    "type": "rent",
+    "category": "apartment",
+    "title": "1-комнатная квартира с ремонтом",
+    "description": "Современный ремонт, новая сантехника и электрика. Уютная и функциональная квартира.",
+    "price": 35000,
+    "address": "Москва, СВАО, Алтуфьевское шоссе, д. 32",
+    "area": 36.9,
+    "rooms": 1,
+    "floor": 6,
+    "total_floors": 10,
+    "year_built": 2013,
+    "images": [
+      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800"
+    ],
+    "amenities": ["современный ремонт", "парковка", "лифт"],
+    "agent": {
+      "name": "Роман Зайцев",
+      "phone": "+7 (495) 889-01-34",
+      "email": "roman@realestate.ru"
+    }
+  },
+  {
+    "id": 29,
+    "type": "sale",
+    "category": "apartment",
+    "title": "3-комнатная квартира в таунхаусе",
+    "description": "Квартира в современном таунхаусе с отдельным входом и палисадником. Европейский формат living.",
+    "price": 28500000,
+    "address": "Москва, Кунцево, Рублевское шоссе, д. 22",
+    "area": 98.4,
+    "rooms": 3,
+    "floor": 1,
+    "total_floors": 3,
+    "year_built": 2020,
+    "images": [
+      "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800"
+    ],
+    "amenities": ["отдельный вход", "палисадник", "парковка", "охрана"],
+    "agent": {
+      "name": "Дарья Петрова",
+      "phone": "+7 (495) 990-12-45",
+      "email": "daria@realestate.ru"
+    }
+  },
+  {
+    "id": 30,
+    "type": "rent",
+    "category": "apartment",
+    "title": "2-комнатная квартира для молодой семьи",
+    "description": "Уютная квартира в спальном районе с развитой инфраструктурой. Идеальный первый вариант.",
+    "price": 48000,
+    "address": "Москва, ЮЗАО, ул. Профсоюзная, д. 65",
+    "area": 53.2,
+    "rooms": 2,
+    "floor": 4,
+    "total_floors": 12,
+    "year_built": 2016,
+    "images": [
+      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800"
+    ],
+    "amenities": ["парковка", "лифт", "детская площадка", "фитнес-центр"],
+    "agent": {
+      "name": "Игорь Маслов",
+      "phone": "+7 (495) 001-23-56",
+      "email": "igor@realestate.ru"
+    }
+  }
+]
