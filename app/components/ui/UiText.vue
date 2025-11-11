@@ -3,7 +3,7 @@ interface IProps {
   size?: 'xs' | 'sm' | 'md' | 'lg'
   isTruncated?: boolean
   tag?: 'span' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'b' | 'i'
-  theme?: 'main'
+  theme?: 'main' | 'secondary'
   lineClamp?: number | string
 }
 
@@ -38,6 +38,10 @@ withDefaults(defineProps<IProps>(), {
 .ui-text {
   &--theme-main {
     color: #262626;
+  }
+
+  &--theme-secondary {
+    color: #738295;
   }
 
   &--size-xs {

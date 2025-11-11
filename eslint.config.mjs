@@ -11,5 +11,7 @@ export default withNuxt({
       selfClosingTag: 'always',
     }],
     'comma-dangle': ['error', 'always-multiline'],
+    'quotes': ['error', 'single', { avoidEscape: true }],
+    'vue/component-name-in-template-casing': ['error', 'PascalCase', { registeredComponentsOnly: false }],
   },
 })

@@ -10,7 +10,7 @@
 
 <style scoped lang="scss">
 .page-body {
-  padding: rem(20) rem(120);
+  padding: rem(20) 0;
   flex-grow: 1;
 }
 </style>
