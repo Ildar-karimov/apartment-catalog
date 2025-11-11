@@ -1,8 +1,10 @@
 import type { IAgent } from '~/types/user';
 
+export type TApartmentType = 'rent' | 'sale'
+
 export interface IApartment {
   id: number
-  type: 'rent' | 'sale'
+  type: TApartmentType
   category: string
   title: string
   description: string

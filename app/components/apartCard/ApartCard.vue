@@ -1,11 +1,15 @@
 <script setup lang="ts">
 import type { IApartment } from '~/types/apartment';
+import { APARTMENT_TYPE_LABEL } from '~/consts/apartment';
 
 interface IProps {
   apartment: IApartment
 }
 
-defineProps<IProps>()
+const props = defineProps<IProps>()
+
+const isRent = computed(() => props.apartment.type === 'rent')
+const isSale = computed(() => props.apartment.type === 'sale')
 </script>
 
 <template>
@@ -15,15 +19,18 @@ defineProps<IProps>()
     </div>
     <div class="apart-card__content">
       <UiText size="md" is-truncated>{{ apartment.title }}</UiText>
-      <UiText is-truncated>{{ apartment.rooms }}-комн.</UiText>
-      <UiText is-truncated>{{ apartment.area }} м²</UiText>
-      <UiText is-truncated>{{ apartment.floor }}/{{ apartment.total_floors }} эт.</UiText>
+      <UiText theme="secondary">{{ APARTMENT_TYPE_LABEL[apartment.type] }}</UiText>
+      <UiText>{{ apartment.rooms }}-комн.</UiText>
+      <UiText>{{ apartment.area }} м²</UiText>
+      <UiText>{{ apartment.floor }}/{{ apartment.total_floors }} эт.</UiText>
 
       <AgentCard :agent="apartment.agent" class="apart-card__agent" />
     </div>
     <div class="apart-card__right">
-      <UiText tag="b" size="md">{{ apartment.price }} ₽</UiText>
-      <UiText v-if="apartment.type === 'sale'">
+      <UiText tag="b" size="md">
+        {{ apartment.price }} ₽{{ isRent ? '/мес.' : undefined }}
+      </UiText>
+      <UiText v-if="isSale">
         В ипотеку от {{ Math.max(Math.ceil(apartment.price / 264), 25999) }} ₽
       </UiText>
     </div>
