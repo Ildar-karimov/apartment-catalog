@@ -1,0 +1,24 @@
+#!/bin/sh
+
+echo "Start pre-commit hook..."
+
+echo "check types..."
+bun typecheck .
+  if [ $? -ne 0 ]; then
+    echo "❌ Type check errors. fix before commit"
+    exit 1
+  fi
+
+  if command -v eslint >/dev/null 2>&1; then
+    echo "check linting..."
+    bun lint
+    if [ $? -ne 0 ]; then
+      echo "❌ Lint errors. run lint:fix or fix manually"
+      exit 1
+    fi
+  else
+    echo "⚠️ install eslint"
+  fi
+
+echo "✅ Finish pre-commit hook!"
+exit 0
