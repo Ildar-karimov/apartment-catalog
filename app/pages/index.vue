@@ -1,18 +1,33 @@
 <script setup lang="ts">
 import { getApartments } from '~/services/apartment.service';
+import InfiniteScroll from '~/components/tech/InfiniteScroll.vue';
 
-const { data: apartments } = await getApartments()
+const { allApartments, allApartmentsCount, currentPage } = storeToRefs(useApartmentsStore());
+const { addApartments } = useApartmentsStore();
+
+const { data, pending } = await getApartments({ page: currentPage });
+
+watch(data, () => {
+  if (data.value) {
+    addApartments(data.value.results, data.value.count);
+  }
+}, { immediate: true });
 </script>
 
 <template>
   <section class="home-page">
     <UiText size="md" tag="h1" class="home-page__title">Покупка\Аренда недвижимости</UiText>
-    <UiText v-if="apartments">
-      {{ apartments?.length }} {{ pluralize(apartments.length, ['объявление', 'объявления', 'объявлений']) }}
+    <UiText v-if="!pending">
+      {{ allApartmentsCount }} {{ pluralize(allApartmentsCount, ['объявление', 'объявления', 'объявлений']) }}
     </UiText>
-    <div class="home-page__content">
-      <ApartCard v-for="apartment in apartments" :key="apartment.id" :apartment="apartment" />
-    </div>
+    <InfiniteScroll
+        class="home-page__content"
+        :pending="pending"
+        :is-finished="allApartments.length === allApartmentsCount"
+        @load-next="currentPage += 1"
+    >
+      <ApartCard v-for="apartment in allApartments" :key="apartment.id" :apartment="apartment" />
+    </InfiniteScroll>
   </section>
 </template>
 

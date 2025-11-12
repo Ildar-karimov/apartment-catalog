@@ -6,6 +6,12 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/test-utils',
+    [
+      '@pinia/nuxt',
+      {
+        autoImports: ['defineStore'],
+      },
+    ],
   ],
   css: [
     '~/assets/scss/main.scss',
@@ -24,4 +30,7 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: process.env.NODE_ENV === 'development',
   },
-})
+  imports: {
+    dirs: ['stores'],
+  },
+});

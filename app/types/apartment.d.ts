@@ -20,3 +20,6 @@ export interface IApartment {
   agent: IAgent
 }
 
+export interface IGetApartmentFilters {
+  page?: Ref<number>
+}
