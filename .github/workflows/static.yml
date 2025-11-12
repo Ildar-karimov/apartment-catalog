@@ -26,7 +26,7 @@ jobs:
         run: bun install
 
       - name: generate static site
-        run: bun run generate
+        run: bun run generate:gh-pages
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

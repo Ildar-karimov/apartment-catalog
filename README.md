@@ -1,75 +1,13 @@
-# Nuxt Minimal Starter
+# Apartments catalog
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## How to start
+`bun install` - installs project dependencies  
+`bun run dev` - start dev mode with hmr  
+`bun run build` - build project for production  
+`bun run preview` - run built production locally
 
-## Setup
 
-Make sure to install dependencies:
+### SSG preview
+https://ildar-karimov.github.io/apartment-catalog/  
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+⚠️ this is a static site generation preview. Some features may not work correctly, because the project ideally requires a server for full functionality

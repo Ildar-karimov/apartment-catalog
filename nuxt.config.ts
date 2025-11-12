@@ -33,4 +33,7 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['stores'],
   },
+  app: {
+    baseURL: process.env.GENERATE_GH ? '/apartment-catalog/' : undefined,
+  },
 });
