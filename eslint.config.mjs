@@ -1,5 +1,5 @@
 // @ts-check
-import withNuxt from './.nuxt/eslint.config.mjs'
+import withNuxt from './.nuxt/eslint.config.mjs';
 
 export default withNuxt({
   rules: {
@@ -13,5 +13,7 @@ export default withNuxt({
     'comma-dangle': ['error', 'always-multiline'],
     'quotes': ['error', 'single', { avoidEscape: true }],
     'vue/component-name-in-template-casing': ['error', 'PascalCase', { registeredComponentsOnly: false }],
+    'comma-spacing': ['error', { before: false, after: true }],
+    'semi': ['error', 'always'],
   },
-})
+});

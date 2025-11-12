@@ -13,7 +13,7 @@ withDefaults(defineProps<IProps>(), {
   tag: 'span',
   theme: 'main',
   lineClamp: undefined,
-})
+});
 </script>
 
 <template>

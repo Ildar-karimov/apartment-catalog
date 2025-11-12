@@ -1,4 +1,4 @@
-import apartments from '../../db/apartments.json'
+import apartments from '../../db/apartments.json';
 
 export default defineEventHandler(async (event) => {
   const id = Number(getRouterParam(event, 'id'));
@@ -10,8 +10,8 @@ export default defineEventHandler(async (event) => {
     throw createError({
       statusCode: 404,
       message: 'Объект не найден',
-    })
+    });
   }
 
   return selectedApartment;
-})
+});

@@ -6,10 +6,10 @@ interface IProps {
   apartment: IApartment
 }
 
-const props = defineProps<IProps>()
+const props = defineProps<IProps>();
 
-const isRent = computed(() => props.apartment.type === 'rent')
-const isSale = computed(() => props.apartment.type === 'sale')
+const isRent = computed(() => props.apartment.type === 'rent');
+const isSale = computed(() => props.apartment.type === 'sale');
 </script>
 
 <template>

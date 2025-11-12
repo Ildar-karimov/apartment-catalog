@@ -3,7 +3,7 @@ import type { IAgent } from '~/types/user';
 
 defineProps<{
   agent: IAgent
-}>()
+}>();
 </script>
 
 <template>

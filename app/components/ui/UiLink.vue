@@ -8,7 +8,7 @@ interface IProps {
 
 withDefaults(defineProps<IProps>(), {
   theme: 'main',
-})
+});
 </script>
 
 <template>
