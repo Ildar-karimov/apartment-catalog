@@ -24,6 +24,7 @@ useInfiniteScroll(prefetchRef, () => {
 <template>
   <div class="infinite-scroll">
     <slot />
+    <UiLoader v-if="pending" />
     <div ref="prefetch" />
   </div>
 </template>
