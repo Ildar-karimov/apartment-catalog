@@ -8,6 +8,4 @@ export const getApartments = (filters?: IGetApartmentFilters) => useFetch<IPagin
   },
 });
 
-export const getApartmentById = (id: number) => useFetch<IApartment>('/api/apartments', {
-  query: { id },
-});
+export const getApartmentById = (id: number) => useFetch<IApartment>(`/api/apartments/${id}`);

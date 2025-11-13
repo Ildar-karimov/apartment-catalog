@@ -19,6 +19,7 @@ const isSale = computed(() => props.apartment.type === 'sale');
     </div>
     <div class="apart-card__content">
       <UiText size="md" is-truncated>{{ apartment.title }}</UiText>
+      <UiText is-truncated tag="b" size="xs">{{ apartment.address }}</UiText>
       <UiText theme="secondary">{{ APARTMENT_TYPE_LABEL[apartment.type] }}</UiText>
       <UiText>{{ apartment.rooms }}-комн.</UiText>
       <UiText>{{ apartment.area }} м²</UiText>
