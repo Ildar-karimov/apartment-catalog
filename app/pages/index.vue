@@ -17,7 +17,8 @@ watch(data, () => {
 <template>
   <section class="home-page">
     <UiText size="md" tag="h1" class="home-page__title">Покупка\Аренда недвижимости</UiText>
-    <UiText v-if="!pending">
+    <UiSkeleton v-if="pending" height="1.5rem" width="6rem" />
+    <UiText v-else>
       {{ allApartmentsCount }} {{ pluralize(allApartmentsCount, ['объявление', 'объявления', 'объявлений']) }}
     </UiText>
     <InfiniteScroll

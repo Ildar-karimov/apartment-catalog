@@ -3,53 +3,64 @@ import { getApartmentById } from '~/services/apartment.service';
 import { APARTMENT_TYPE_LABEL } from '~/consts/apartment';
 
 const route = useRoute();
-const { data: apartment } = getApartmentById(Number(route.params.id));
+const { data: apartment, pending } = getApartmentById(Number(route.params.id));
 
 const isRent = computed(() => apartment.value?.type === 'rent');
 </script>
 
 <template>
   <section class="apart-page">
-    <div v-if="apartment" class="apart-page__content">
-      <UiText size="lg" tag="h1">{{ apartment.title }}</UiText>
-      <UiText theme="secondary">{{ APARTMENT_TYPE_LABEL[apartment.type] }}</UiText>
-      <img :src="apartment.images?.[0]" class="apart-card__img" width="100%" height="450" alt="">
-      <div class="apart-page__row">
-        <UiText tag="b">Адрес</UiText>
-        <UiText>{{ apartment.address }}</UiText>
+    <template v-if="pending">
+      <div class="apart-page__content">
+        <UiSkeleton height="32rem" />
+        <UiSkeleton :rows="6" />
       </div>
-      <div class="apart-page__row">
-        <UiText tag="b">Описание</UiText>
-        <UiText>{{ apartment.description }}</UiText>
+      <div class="apart-page__main-info">
+        <UiSkeleton :rows="6" />
       </div>
-      <div class="apart-page__row">
-        <UiText tag="b">Преимущества</UiText>
-        <div class="apart-page__amenities">
-          <div v-for="amenity in apartment.amenities" :key="amenity" class="amenity-card">
-            <div class="amenity-card__icon">
-              <Icon name="system-uicons:chevron-up-circle" />
+    </template>
+    <template v-else-if="apartment">
+      <div class="apart-page__content">
+        <UiText size="lg" tag="h1">{{ apartment.title }}</UiText>
+        <UiText theme="secondary">{{ APARTMENT_TYPE_LABEL[apartment.type] }}</UiText>
+        <img :src="apartment.images?.[0]" class="apart-card__img" width="100%" height="450" alt="">
+        <div class="apart-page__row">
+          <UiText tag="b">Адрес</UiText>
+          <UiText>{{ apartment.address }}</UiText>
+        </div>
+        <div class="apart-page__row">
+          <UiText tag="b">Описание</UiText>
+          <UiText>{{ apartment.description }}</UiText>
+        </div>
+        <div class="apart-page__row">
+          <UiText tag="b">Преимущества</UiText>
+          <div class="apart-page__amenities">
+            <div v-for="amenity in apartment.amenities" :key="amenity" class="amenity-card">
+              <div class="amenity-card__icon">
+                <Icon name="system-uicons:chevron-up-circle" />
+              </div>
+              <UiText>{{ amenity }}</UiText>
             </div>
-            <UiText>{{ amenity }}</UiText>
           </div>
         </div>
+        <div class="apart-page__row">
+          <UiText tag="b">Продавец</UiText>
+          <AgentCard :agent="apartment.agent" />
+        </div>
       </div>
-      <div class="apart-page__row">
-        <UiText tag="b">Продавец</UiText>
-        <AgentCard :agent="apartment.agent" />
+      <div class="apart-page__main-info">
+        <UiText>
+          {{ apartment.rooms }}-комн. {{ apartment.category }}, {{ apartment.area }} м²
+        </UiText>
+        <UiText size="sm" theme="secondary">{{ apartment.floor }}/{{ apartment.total_floors }} эт.</UiText>
+        <UiText tag="b" size="lg">
+          {{ apartment.price }} ₽{{ isRent ? '/мес.' : undefined }}
+        </UiText>
+        <UiText theme="secondary">{{ Math.ceil(apartment.price / apartment.area) }} ₽/м²</UiText>
+        <AgentCard class="apart-page__agent" :agent="apartment.agent" />
+        <UiButton theme="primary" size="md" class="apart-page__btn">Показать телефон</UiButton>
       </div>
-    </div>
-    <div v-if="apartment" class="apart-page__main-info">
-      <UiText>
-        {{ apartment.rooms }}-комн. {{ apartment.category }}, {{ apartment.area }} м²
-      </UiText>
-      <UiText size="sm" theme="secondary">{{ apartment.floor }}/{{ apartment.total_floors }} эт.</UiText>
-      <UiText tag="b" size="lg">
-        {{ apartment.price }} ₽{{ isRent ? '/мес.' : undefined }}
-      </UiText>
-      <UiText theme="secondary">{{ Math.ceil(apartment.price / apartment.area) }} ₽/м²</UiText>
-      <AgentCard class="apart-page__agent" :agent="apartment.agent" />
-      <UiButton theme="primary" size="md" class="apart-page__btn">Показать телефон</UiButton>
-    </div>
+    </template>
   </section>
 </template>
 
@@ -85,6 +96,7 @@ const isRent = computed(() => apartment.value?.type === 'rent');
     display: flex;
     flex-direction: column;
     gap: rem(8);
+    width: 100%;
   }
 
   img {
