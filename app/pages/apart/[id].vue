@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { getApartmentById } from '~/services/apartment.service';
+import { APARTMENT_TYPE_LABEL } from '~/consts/apartment';
 
 const route = useRoute();
 const { data: apartment } = getApartmentById(Number(route.params.id));
@@ -11,6 +12,7 @@ const isRent = computed(() => apartment.value?.type === 'rent');
   <section class="apart-page">
     <div v-if="apartment" class="apart-page__content">
       <UiText size="lg" tag="h1">{{ apartment.title }}</UiText>
+      <UiText theme="secondary">{{ APARTMENT_TYPE_LABEL[apartment.type] }}</UiText>
       <img :src="apartment.images?.[0]" class="apart-card__img" width="100%" height="450" alt="">
       <div class="apart-page__row">
         <UiText tag="b">Адрес</UiText>
@@ -19,6 +21,21 @@ const isRent = computed(() => apartment.value?.type === 'rent');
       <div class="apart-page__row">
         <UiText tag="b">Описание</UiText>
         <UiText>{{ apartment.description }}</UiText>
+      </div>
+      <div class="apart-page__row">
+        <UiText tag="b">Преимущества</UiText>
+        <div class="apart-page__amenities">
+          <div v-for="amenity in apartment.amenities" :key="amenity" class="amenity-card">
+            <div class="amenity-card__icon">
+              <Icon name="system-uicons:chevron-up-circle" />
+            </div>
+            <UiText>{{ amenity }}</UiText>
+          </div>
+        </div>
+      </div>
+      <div class="apart-page__row">
+        <UiText tag="b">Продавец</UiText>
+        <AgentCard :agent="apartment.agent" />
       </div>
     </div>
     <div v-if="apartment" class="apart-page__main-info">
@@ -88,6 +105,28 @@ const isRent = computed(() => apartment.value?.type === 'rent');
 
   &__btn {
     margin-top: rem(16);
+  }
+
+  &__amenities {
+    display: grid;
+    grid-template-columns: rem(300) rem(300);
+    gap: rem(16);
+    justify-content: center;
+  }
+}
+
+.amenity-card {
+  display: flex;
+  gap: rem(8);
+  align-items: center;
+  justify-content: center;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+
+    font-size: rem(36);
+    color: #009e36;
   }
 }
 </style>
