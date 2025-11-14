@@ -4,7 +4,7 @@
 
 <template>
 <div>
-  <h1>Покупка квартиры</h1>
+  <UiText tag="h1">Покупка квартиры</UiText>
 </div>
 </template>
 

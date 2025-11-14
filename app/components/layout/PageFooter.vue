@@ -4,7 +4,9 @@
 
 <template>
   <footer class="page-footer">
-    github: Ildar-karimov
+    <UiText>
+      github: Ildar-karimov
+    </UiText>
   </footer>
 </template>
 
