@@ -22,10 +22,10 @@ withDefaults(defineProps<IProps>(), {
   transition: color 300ms;
 
   &--theme-main {
-    color: #738295;
+    color: rootVar(color-txt-secondary);
 
     &:hover {
-      color: #262626;
+      color: rootVar(color-txt-secondary-hover);
     }
   }
 }

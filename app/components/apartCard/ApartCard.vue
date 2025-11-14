@@ -44,7 +44,7 @@ const isSale = computed(() => props.apartment.type === 'sale');
   gap: rem(16);
   padding: rem(16) rem(32) rem(16) rem(16);
 
-  background-color: #fff;
+  background-color: rootVar(bg-main);
   border-radius: rem(20);
 
   &__img {

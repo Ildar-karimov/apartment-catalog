@@ -1,5 +1,12 @@
 @use "sass:math";
+@use 'sass:map';
+@use "variables/defaultTheme.scss" as *;
 
 @function rem($px, $base: 16) {
   @return math.div($px, $base) * 1rem;
 }
+
+@function rootVar($name) {
+  @return var(--#{$name}, map.get($default-theme, $name))
+}
+

@@ -15,6 +15,6 @@
   justify-content: center;
   padding: rem(8) rem(120);
 
-  background-color: #fff;
+  background-color: rootVar(bg-main);
 }
 </style>

@@ -31,7 +31,7 @@ withDefaults(defineProps<IProps>(), {
 
     color: transparent;
 
-    background: #c4cccc;
+    background: rootVar(bg-6);
     border-radius: rem(6);
 
     overflow: hidden;

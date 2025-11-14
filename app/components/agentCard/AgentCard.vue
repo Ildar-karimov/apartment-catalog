@@ -31,9 +31,9 @@ defineProps<{
     padding: rem(8);
 
     font-size: rem(32);
-    color: #fff;
+    color: rootVar(bg-main);
 
-    background-color: #738295;
+    background-color: rootVar(bg-third);
     border-radius: 50%;
   }
 }

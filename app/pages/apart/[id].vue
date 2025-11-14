@@ -76,7 +76,7 @@ const isRent = computed(() => apartment.value?.type === 'rent');
 
   &__content,
   &__main-info {
-    background-color: #fff;
+    background-color: rootVar(bg-main);
     border-radius: rem(16);
     padding: rem(16);
   }
@@ -138,7 +138,7 @@ const isRent = computed(() => apartment.value?.type === 'rent');
     align-items: center;
 
     font-size: rem(36);
-    color: #009e36;
+    color: rootVar(color-txt-4);
   }
 }
 </style>

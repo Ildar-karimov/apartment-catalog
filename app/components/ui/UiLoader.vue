@@ -37,7 +37,7 @@ withDefaults(defineProps<IProps>(), {
       width: rem(7);
       height: rem(7);
       border-radius: 50%;
-      background: #009e36;
+      background: rootVar(bg-4);
       margin: rem(-4) 0 0 rem(-4);
     }
 

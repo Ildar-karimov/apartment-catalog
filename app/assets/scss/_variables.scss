@@ -1,1 +1,17 @@
+@use "variables/defaultTheme.scss" as *;
+@use "variables/darkTheme.scss" as *;
+
 $font-family: Tahoma, Verdana, sans-serif;
+
+$themes: (
+  default: $default-theme,
+  dark: $dark-theme,
+);
+
+@each $theme-name, $vars in $themes {
+:root[data-theme="#{$theme-name}"] {
+  @each $var-name, $value in $vars {
+    --#{$var-name}: #{$value};
+  }
+}
+}

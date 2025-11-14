@@ -24,28 +24,28 @@ withDefaults(defineProps<IProps>(), {
   transition: color, background-color 300ms;
   
   &--theme-main {
-    color: #738295;
+    color: rootVar(color-txt-secondary);
 
     &:hover {
-      color: #262626;
-      background-color: #ccf1d9;
+      color: rootVar(color-txt-secondary-hover);
+      background-color: rootVar(bg-third-hover);
     }
 
     &:active {
-      color: #171717;
+      color: rootVar(color-txt-secondary-active);
     }
   }
 
   &--theme-primary {
-    color: #fff;
-    background-color: #009e36;
+    color: rootVar(color-txt-third);
+    background-color: rootVar(bg-4);
 
     &:hover {
-      background-color: #009532;
+      background-color: rootVar(bg-4-hover);
     }
 
     &:active {
-      background-color: #007529;
+      background-color: rootVar(bg-4-active);
     }
   }
 

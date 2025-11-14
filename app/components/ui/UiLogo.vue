@@ -9,10 +9,10 @@
   display: inline-block;
   padding: rem(8) rem(10);
 
-  color: #009e36;
+  color: rootVar(color-txt-4);
   font-weight: 600;
 
-  border: rem(1) solid #d9dadd;
+  border: rem(1) solid rootVar(bg-5);
   border-radius: rem(8);
 }
 </style>

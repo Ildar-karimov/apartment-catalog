@@ -37,11 +37,11 @@ withDefaults(defineProps<IProps>(), {
 <style scoped lang="scss">
 .ui-text {
   &--theme-main {
-    color: #262626;
+    color: rootVar(color-txt-main);
   }
 
   &--theme-secondary {
-    color: #738295;
+    color: rootVar(color-txt-secondary);
   }
 
   &--size-xs {
