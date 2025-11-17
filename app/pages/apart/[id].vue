@@ -54,9 +54,9 @@ const isRent = computed(() => apartment.value?.type === 'rent');
         </UiText>
         <UiText size="sm" theme="secondary">{{ apartment.floor }}/{{ apartment.total_floors }} эт.</UiText>
         <UiText tag="b" size="lg">
-          {{ apartment.price }} ₽{{ isRent ? '/мес.' : undefined }}
+          {{ formatNumber(apartment.price) }} ₽{{ isRent ? '/мес.' : undefined }}
         </UiText>
-        <UiText theme="secondary">{{ Math.ceil(apartment.price / apartment.area) }} ₽/м²</UiText>
+        <UiText theme="secondary">{{ formatNumber(Math.ceil(apartment.price / apartment.area)) }} ₽/м²</UiText>
         <AgentCard class="apart-page__agent" :agent="apartment.agent" />
         <UiButton theme="primary" size="md" class="apart-page__btn">Показать телефон</UiButton>
       </div>

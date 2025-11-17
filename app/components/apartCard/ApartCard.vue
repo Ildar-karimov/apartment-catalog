@@ -29,10 +29,10 @@ const isSale = computed(() => props.apartment.type === 'sale');
     </div>
     <div class="apart-card__right">
       <UiText tag="b" size="md">
-        {{ apartment.price }} ₽{{ isRent ? '/мес.' : undefined }}
+        {{ formatNumber(apartment.price) }} ₽{{ isRent ? '/мес.' : undefined }}
       </UiText>
       <UiText v-if="isSale">
-        В ипотеку от {{ Math.max(Math.ceil(apartment.price / 264), 25999) }} ₽
+        В ипотеку от {{ formatNumber(Math.max(Math.ceil(apartment.price / 264), 25999)) }} ₽
       </UiText>
     </div>
   </NuxtLink>
