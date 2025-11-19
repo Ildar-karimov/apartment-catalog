@@ -2,7 +2,7 @@
 
 interface IProps {
   theme?: 'main' | 'primary'
-  size?: 'inline' | 'md'
+  size?: 'inline' | 'sm' | 'md'
   type?: 'button' | 'submit'
 }
 
@@ -51,6 +51,11 @@ withDefaults(defineProps<IProps>(), {
 
   &--size-md {
     padding: rem(16) rem(24);
+    border-radius: rem(6);
+  }
+
+  &--size-sm {
+    padding: rem(8) rem(12);
     border-radius: rem(6);
   }
 }
