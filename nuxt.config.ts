@@ -28,7 +28,8 @@ export default defineNuxtConfig({
     },
   },
   typescript: {
-    typeCheck: process.env.NODE_ENV === 'development',
+    // has errors at nuxt 4.2.1
+    // typeCheck: process.env.NODE_ENV === 'development',
   },
   imports: {
     dirs: ['stores'],
