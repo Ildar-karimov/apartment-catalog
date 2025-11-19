@@ -70,8 +70,7 @@ const isRent = computed(() => apartment.value?.type === 'rent');
   display: flex;
   align-items: flex-start;
   gap: rem(14);
-  padding: 0 rem(120);
-  max-width: rem(1400);
+  max-width: rem(1200);
   margin: 0 auto;
 
   &__content,

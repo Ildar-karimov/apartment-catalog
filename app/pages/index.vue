@@ -37,7 +37,6 @@ watch(data, () => {
   display: flex;
   flex-direction: column;
   gap: rem(14);
-  padding: 0 rem(120);
   margin: 0 auto;
   max-width: rem(1200);
 
