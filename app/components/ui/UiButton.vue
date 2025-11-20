@@ -21,7 +21,7 @@ withDefaults(defineProps<IProps>(), {
 
 <style scoped lang="scss">
 .ui-button {
-  transition: color, background-color 300ms;
+  transition: color 300ms, background-color 300ms;
   
   &--theme-main {
     color: rootVar(color-txt-secondary);

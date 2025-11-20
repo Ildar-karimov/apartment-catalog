@@ -28,7 +28,7 @@ const isChecked = computed(() => modelValue.value == props.value);
           :value="value"
       >
     </span>
-    <UiText size="md" class="ui-radio__label">
+    <UiText v-if="label || $slots.default" size="md" class="ui-radio__label">
       <slot>{{ label }}</slot>
     </UiText>
   </label>
@@ -98,6 +98,8 @@ const isChecked = computed(() => modelValue.value == props.value);
 
     border: rem(1) solid rootVar(bg-4);
     border-right-color: transparent;
+
+    transition: background-color 300ms;
 
     &:hover {
       background-color: rootVar(bg-third-hover);

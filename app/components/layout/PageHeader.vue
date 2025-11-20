@@ -48,7 +48,7 @@ const { changeTheme } = useTheme();
 
     border-bottom: rem(2) solid transparent;
 
-    transition: color, border-bottom-color 300ms;
+    transition: color 300ms, border-bottom-color 300ms;
 
     &:hover {
       color: rootVar(color-txt-main);
